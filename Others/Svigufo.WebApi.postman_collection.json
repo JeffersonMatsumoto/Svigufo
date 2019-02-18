@@ -1,0 +1,267 @@
+{
+	"info": {
+		"_postman_id": "0f2ade17-b5f8-857f-dc0d-cf03e28bc2b2",
+		"name": "Svigufo.WebApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "TiposEventos",
+			"item": [
+				{
+					"name": "TiposEventos.Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/tiposeventos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tiposeventos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TiposEventos.Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"Tech\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/tiposeventos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tiposeventos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TiposEventos.Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"Web Design\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/tiposeventos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tiposeventos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TiposEventos.Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:5000/api/tiposeventos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"tiposeventos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Instituicoes",
+			"item": [
+				{
+					"name": "Instituicoes.Listar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/instituicoes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"instituicoes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Instituicoes.Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"NOMEFantasia\": \"A\",\n    \"razaosocial\": \"Empresa A\",\n    \"cnpj\": \"12312312312312\",\n    \"logradouro\": \"Rua sem número\",\n    \"cep\": \"98712345\",\n    \"cidade\": \"São Paulo\",\n    \"uf\": \"SP\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/instituicoes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"instituicoes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Instituicoes.GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/instituicoes/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"instituicoes",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Instituicoes.Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/instituicoes/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"instituicoes",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Instituicoes.Atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"razaoSocial\":\"Empresa A Ltda\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/instituicoes/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"instituicoes",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
